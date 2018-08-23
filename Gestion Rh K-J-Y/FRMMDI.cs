@@ -15,7 +15,7 @@ namespace Gestion_Rh_K_J_Y
         public MDI()
         {
             InitializeComponent();
-            Donnees.MDI = this;
+            LCollaborateurs.MDI = this;
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)

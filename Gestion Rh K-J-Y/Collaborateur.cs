@@ -229,17 +229,15 @@ namespace Gestion_Rh_K_J_Y
                 this.situationFamiliale = situationF;
                 this.service = Serv;
                 this.etatCivil = etatC;
-            this.Id = iden;
-            this.Mdp = motpasse;
-               
+                this.Id = iden;
+                this.Mdp = motpasse;
 
-          
 
-        }
-        
-            
-            
 
-      
+
+
+            }
+
+       
     }
 }

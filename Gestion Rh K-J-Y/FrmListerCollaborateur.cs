@@ -13,6 +13,9 @@ namespace Gestion_Rh_K_J_Y
     public partial class FrmListerCollaborateur : Form
     {
         public MDI MDIparent { get; internal set; }
+        private Collaborateur lecollaborateur;
+        private LCollaborateurs lCollaborateurs = new LCollaborateurs();
+
 
         public FrmListerCollaborateur()
         {
@@ -28,15 +31,16 @@ namespace Gestion_Rh_K_J_Y
             c2 = new Collaborateur(2, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue ", "8768766", 20000, "Boss", "Célibataire", "Administartion", 2789, 6541);
             c3 = new Collaborateur(3, "M", "Loum", "Khadim", "73000", "Orléans", "5 r", "678687", 20000, "Boss", "Célibataire", "Administartion", 2456, 6325);
             c4 = new Collaborateur(4, "M", "Loum", "Khadim", "73000", "Orléans", "55s", "676576", 20000, "Boss", "Célibataire", "Administartion", 2346, 3156);
-            if (Donnees.listCollaborateur != null)
+            if (LCollaborateurs.listCollaborateur != null)
             {
-                Donnees.listCollaborateur.Clear();
+                LCollaborateurs.listCollaborateur.Clear();
             }
 
-            Donnees.listCollaborateur.Add(c1.MATRICULE, c1);
+            Donnees.listCollaborateur.Add(c1. MATRICULE, c1);
             Donnees.listCollaborateur.Add(c2.MATRICULE, c2);
             Donnees.listCollaborateur.Add(c3.MATRICULE, c3);
             Donnees.listCollaborateur.Add(c4.MATRICULE, c4);
+           
 
 
             this.rbService.Checked = true;
@@ -78,7 +82,8 @@ namespace Gestion_Rh_K_J_Y
             dt.Columns.Add(new DataColumn("Situation Familiale", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Service", typeof(System.String)));
 
-            foreach (Collaborateur Collabo in Donnees.listCollaborateur.Values)
+
+            foreach (Collaborateur Collabo in LCollaborateurs.listCollaborateur.Values)
             {
                 // instanciation DataRow (= ligne du DataTable)
                 dr = dt.NewRow();
@@ -182,7 +187,7 @@ namespace Gestion_Rh_K_J_Y
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-
+           
         }
         private void dgvListCollaborateurs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -199,7 +204,7 @@ namespace Gestion_Rh_K_J_Y
 
                 //MessageBox.Show("Le Numéro du Collaborateur est :" + leMatcollaborateur);
 
-                Collaborateur leCollaborateur = Donnees.listCollaborateur[leMatcollaborateur] as Collaborateur;
+                Collaborateur leCollaborateur = LCollaborateurs.listCollaborateur[leMatcollaborateur] as Collaborateur;
 
                 //Collaborateur leCollaborateur = Donnees.Lcl.RechercherClient(leMatcollaborateur) as Collaborateur;
 
@@ -222,6 +227,11 @@ namespace Gestion_Rh_K_J_Y
     }
 
         private void dgvListCollaborateurs_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip2_Opening(object sender, CancelEventArgs e)
         {
 
         }

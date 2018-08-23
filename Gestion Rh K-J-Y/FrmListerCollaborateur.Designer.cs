@@ -43,6 +43,7 @@
             this.btnFermer = new System.Windows.Forms.Button();
             this.rbEtatCivile = new System.Windows.Forms.RadioButton();
             this.dgvListCollaborateurs = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).BeginInit();
@@ -186,6 +187,12 @@
             this.dgvListCollaborateurs.TabIndex = 7;
             this.dgvListCollaborateurs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListCollaborateurs_CellContentClick_1);
             // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip2.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip2_Opening);
+            // 
             // FrmListerCollaborateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,5 +233,6 @@
         private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.RadioButton rbEtatCivile;
         private System.Windows.Forms.DataGridView dgvListCollaborateurs;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
     }
 }
