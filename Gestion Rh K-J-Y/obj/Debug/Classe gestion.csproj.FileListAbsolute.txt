@@ -8,15 +8,3 @@ c:\users\tsgeri\source\repos\Gestion Rh K-J-Y\Gestion Rh K-J-Y\bin\Debug\Gestion
 c:\users\tsgeri\source\repos\Gestion Rh K-J-Y\Gestion Rh K-J-Y\bin\Debug\Gestion Rh K-J-Y.pdb
 c:\users\tsgeri\source\repos\Gestion Rh K-J-Y\Gestion Rh K-J-Y\obj\Debug\Gestion Rh K-J-Y.exe
 c:\users\tsgeri\source\repos\Gestion Rh K-J-Y\Gestion Rh K-J-Y\obj\Debug\Gestion Rh K-J-Y.pdb
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\bin\Debug\Gestion Rh K-J-Y.exe.config
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\bin\Debug\Gestion Rh K-J-Y.exe
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\bin\Debug\Gestion Rh K-J-Y.pdb
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Classe gestion.csprojAssemblyReference.cache
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Gestion_Rh_K_J_Y.FrmAjoutCollaborateur.resources
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Gestion_Rh_K_J_Y.FrmListerCollaborateur.resources
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Gestion_Rh_K_J_Y.MDI.resources
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Gestion_Rh_K_J_Y.Properties.Resources.resources
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Classe gestion.csproj.GenerateResource.cache
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Classe gestion.csproj.CoreCompileInputs.cache
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Gestion Rh K-J-Y.exe
-C:\Users\tsgeri\Source\Repos\RH2\Gestion Rh K-J-Y\obj\Debug\Gestion Rh K-J-Y.pdb
