@@ -60,5 +60,15 @@ namespace Gestion_Rh_K_J_Y
         {
 
         }
+
+        private void txtRecherche_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

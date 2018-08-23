@@ -75,9 +75,9 @@
             this.ColumnQualification,
             this.ColumnSituationF,
             this.ColumnService});
-            this.dgvLister.Location = new System.Drawing.Point(2, 245);
+            this.dgvLister.Location = new System.Drawing.Point(9, 92);
             this.dgvLister.Name = "dgvLister";
-            this.dgvLister.Size = new System.Drawing.Size(1216, 137);
+            this.dgvLister.Size = new System.Drawing.Size(625, 137);
             this.dgvLister.TabIndex = 0;
             this.dgvLister.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -157,7 +157,7 @@
             // lblRecherche
             // 
             this.lblRecherche.AutoSize = true;
-            this.lblRecherche.Location = new System.Drawing.Point(12, 84);
+            this.lblRecherche.Location = new System.Drawing.Point(12, 9);
             this.lblRecherche.Name = "lblRecherche";
             this.lblRecherche.Size = new System.Drawing.Size(60, 13);
             this.lblRecherche.TabIndex = 1;
@@ -166,14 +166,15 @@
             // 
             // txtRecherche
             // 
-            this.txtRecherche.Location = new System.Drawing.Point(96, 81);
+            this.txtRecherche.Location = new System.Drawing.Point(105, 6);
             this.txtRecherche.Name = "txtRecherche";
             this.txtRecherche.Size = new System.Drawing.Size(374, 20);
             this.txtRecherche.TabIndex = 2;
+            this.txtRecherche.TextChanged += new System.EventHandler(this.txtRecherche_TextChanged);
             // 
             // btnLancer
             // 
-            this.btnLancer.Location = new System.Drawing.Point(488, 79);
+            this.btnLancer.Location = new System.Drawing.Point(506, 4);
             this.btnLancer.Name = "btnLancer";
             this.btnLancer.Size = new System.Drawing.Size(75, 23);
             this.btnLancer.TabIndex = 3;
@@ -186,9 +187,9 @@
             this.groupBox1.Controls.Add(this.rbtNom);
             this.groupBox1.Controls.Add(this.rbtService);
             this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(72, 125);
+            this.groupBox1.Location = new System.Drawing.Point(66, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(413, 100);
+            this.groupBox1.Size = new System.Drawing.Size(413, 54);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tri";
@@ -196,7 +197,7 @@
             // rbtAfficherTout
             // 
             this.rbtAfficherTout.AutoSize = true;
-            this.rbtAfficherTout.Location = new System.Drawing.Point(310, 48);
+            this.rbtAfficherTout.Location = new System.Drawing.Point(321, 19);
             this.rbtAfficherTout.Name = "rbtAfficherTout";
             this.rbtAfficherTout.Size = new System.Drawing.Size(86, 17);
             this.rbtAfficherTout.TabIndex = 3;
@@ -207,7 +208,7 @@
             // rbtNom
             // 
             this.rbtNom.AutoSize = true;
-            this.rbtNom.Location = new System.Drawing.Point(120, 48);
+            this.rbtNom.Location = new System.Drawing.Point(119, 19);
             this.rbtNom.Name = "rbtNom";
             this.rbtNom.Size = new System.Drawing.Size(47, 17);
             this.rbtNom.TabIndex = 1;
@@ -218,7 +219,7 @@
             // rbtService
             // 
             this.rbtService.AutoSize = true;
-            this.rbtService.Location = new System.Drawing.Point(16, 48);
+            this.rbtService.Location = new System.Drawing.Point(16, 19);
             this.rbtService.Name = "rbtService";
             this.rbtService.Size = new System.Drawing.Size(61, 17);
             this.rbtService.TabIndex = 0;
@@ -228,7 +229,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(860, 554);
+            this.button1.Location = new System.Drawing.Point(323, 235);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(74, 23);
             this.button1.TabIndex = 3;
@@ -237,7 +238,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(975, 554);
+            this.button2.Location = new System.Drawing.Point(437, 235);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -246,18 +247,18 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1090, 554);
+            this.button3.Location = new System.Drawing.Point(547, 235);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
             this.button3.Text = "Fermer";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // FrmLister
+            // FrmListerCollaborateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 606);
+            this.ClientSize = new System.Drawing.Size(646, 267);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -267,7 +268,7 @@
             this.Controls.Add(this.lblRecherche);
             this.Controls.Add(this.dgvLister);
             this.Enabled = false;
-            this.Name = "FrmLister";
+            this.Name = "FrmListerCollaborateur";
             this.Text = "Lancer";
             this.Load += new System.EventHandler(this.FrmLister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLister)).EndInit();
