@@ -28,260 +28,481 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.lblMat = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
+            this.lblPrenom = new System.Windows.Forms.Label();
+            this.lblCivil = new System.Windows.Forms.Label();
+            this.lblAdress1 = new System.Windows.Forms.Label();
+            this.lblAdress2 = new System.Windows.Forms.Label();
+            this.lblCP = new System.Windows.Forms.Label();
+            this.lblVille = new System.Windows.Forms.Label();
+            this.lblSitFam = new System.Windows.Forms.Label();
+            this.gbxContrat = new System.Windows.Forms.GroupBox();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.lblInterim = new System.Windows.Forms.Label();
+            this.lblMotif = new System.Windows.Forms.Label();
+            this.lblFinContrat = new System.Windows.Forms.Label();
+            this.lblService = new System.Windows.Forms.Label();
+            this.lblEcole = new System.Windows.Forms.Label();
+            this.lblStatut = new System.Windows.Forms.Label();
+            this.lblIndemnite = new System.Windows.Forms.Label();
+            this.lblFonction = new System.Windows.Forms.Label();
+            this.lblQualif = new System.Windows.Forms.Label();
+            this.lblTypeContrat = new System.Windows.Forms.Label();
+            this.lblDebutContrat = new System.Windows.Forms.Label();
+            this.txtMat = new System.Windows.Forms.TextBox();
+            this.cbxCivil = new System.Windows.Forms.ComboBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.cbxSitFam = new System.Windows.Forms.ComboBox();
+            this.txtAdress1 = new System.Windows.Forms.TextBox();
+            this.txtAdress2 = new System.Windows.Forms.TextBox();
+            this.txtCP = new System.Windows.Forms.TextBox();
+            this.txtVille = new System.Windows.Forms.TextBox();
+            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
+            this.cbxTypeContrat = new System.Windows.Forms.ComboBox();
+            this.cbxMotif = new System.Windows.Forms.ComboBox();
+            this.cbxQualif = new System.Windows.Forms.ComboBox();
+            this.cbxFonction = new System.Windows.Forms.ComboBox();
+            this.txtInterim = new System.Windows.Forms.TextBox();
+            this.txtEcole = new System.Windows.Forms.TextBox();
+            this.cbxStatut = new System.Windows.Forms.ComboBox();
+            this.cbxService = new System.Windows.Forms.ComboBox();
+            this.lblBrut = new System.Windows.Forms.Label();
+            this.txtBrut = new System.Windows.Forms.TextBox();
+            this.txtIndemnite = new System.Windows.Forms.TextBox();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.gbxContrat.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblMat
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Matricule";
+            this.lblMat.AutoSize = true;
+            this.lblMat.Location = new System.Drawing.Point(12, 8);
+            this.lblMat.Name = "lblMat";
+            this.lblMat.Size = new System.Drawing.Size(50, 13);
+            this.lblMat.TabIndex = 0;
+            this.lblMat.Text = "Matricule";
             // 
-            // label2
+            // lblNom
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblNom.AutoSize = true;
+            this.lblNom.Location = new System.Drawing.Point(179, 8);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(29, 13);
+            this.lblNom.TabIndex = 1;
+            this.lblNom.Text = "Nom";
             // 
-            // label3
+            // lblPrenom
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.lblPrenom.AutoSize = true;
+            this.lblPrenom.Location = new System.Drawing.Point(314, 8);
+            this.lblPrenom.Name = "lblPrenom";
+            this.lblPrenom.Size = new System.Drawing.Size(43, 13);
+            this.lblPrenom.TabIndex = 2;
+            this.lblPrenom.Text = "Prénom";
             // 
-            // label4
+            // lblCivil
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(339, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "LLL";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblCivil.AutoSize = true;
+            this.lblCivil.Location = new System.Drawing.Point(68, 8);
+            this.lblCivil.Name = "lblCivil";
+            this.lblCivil.Size = new System.Drawing.Size(47, 13);
+            this.lblCivil.TabIndex = 3;
+            this.lblCivil.Text = "Etat civil";
+            this.lblCivil.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblAdress1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(339, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lblAdress1.AutoSize = true;
+            this.lblAdress1.Location = new System.Drawing.Point(61, 65);
+            this.lblAdress1.Name = "lblAdress1";
+            this.lblAdress1.Size = new System.Drawing.Size(54, 13);
+            this.lblAdress1.TabIndex = 4;
+            this.lblAdress1.Text = "Adresse 1";
             // 
-            // label6
+            // lblAdress2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(339, 123);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.lblAdress2.AutoSize = true;
+            this.lblAdress2.Location = new System.Drawing.Point(242, 65);
+            this.lblAdress2.Name = "lblAdress2";
+            this.lblAdress2.Size = new System.Drawing.Size(54, 13);
+            this.lblAdress2.TabIndex = 5;
+            this.lblAdress2.Text = "Adresse 2";
             // 
-            // label7
+            // lblCP
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(586, 47);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.lblCP.AutoSize = true;
+            this.lblCP.Location = new System.Drawing.Point(353, 65);
+            this.lblCP.Name = "lblCP";
+            this.lblCP.Size = new System.Drawing.Size(64, 13);
+            this.lblCP.TabIndex = 6;
+            this.lblCP.Text = "Code Postal";
             // 
-            // label8
+            // lblVille
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(586, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.lblVille.AutoSize = true;
+            this.lblVille.Location = new System.Drawing.Point(472, 66);
+            this.lblVille.Name = "lblVille";
+            this.lblVille.Size = new System.Drawing.Size(26, 13);
+            this.lblVille.TabIndex = 7;
+            this.lblVille.Text = "Ville";
             // 
-            // label9
+            // lblSitFam
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(586, 123);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "label9";
+            this.lblSitFam.AutoSize = true;
+            this.lblSitFam.Location = new System.Drawing.Point(434, 8);
+            this.lblSitFam.Name = "lblSitFam";
+            this.lblSitFam.Size = new System.Drawing.Size(88, 13);
+            this.lblSitFam.TabIndex = 8;
+            this.lblSitFam.Text = "Situation familiale";
             // 
-            // groupBox1
+            // gbxContrat
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Location = new System.Drawing.Point(-6, 240);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(729, 168);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gbxContrat.Controls.Add(this.txtIndemnite);
+            this.gbxContrat.Controls.Add(this.txtBrut);
+            this.gbxContrat.Controls.Add(this.lblBrut);
+            this.gbxContrat.Controls.Add(this.cbxService);
+            this.gbxContrat.Controls.Add(this.cbxStatut);
+            this.gbxContrat.Controls.Add(this.txtEcole);
+            this.gbxContrat.Controls.Add(this.txtInterim);
+            this.gbxContrat.Controls.Add(this.cbxFonction);
+            this.gbxContrat.Controls.Add(this.cbxQualif);
+            this.gbxContrat.Controls.Add(this.cbxMotif);
+            this.gbxContrat.Controls.Add(this.cbxTypeContrat);
+            this.gbxContrat.Controls.Add(this.dtpDebut);
+            this.gbxContrat.Controls.Add(this.dtpFin);
+            this.gbxContrat.Controls.Add(this.lblInterim);
+            this.gbxContrat.Controls.Add(this.lblMotif);
+            this.gbxContrat.Controls.Add(this.lblFinContrat);
+            this.gbxContrat.Controls.Add(this.lblService);
+            this.gbxContrat.Controls.Add(this.lblEcole);
+            this.gbxContrat.Controls.Add(this.lblStatut);
+            this.gbxContrat.Controls.Add(this.lblIndemnite);
+            this.gbxContrat.Controls.Add(this.lblFonction);
+            this.gbxContrat.Controls.Add(this.lblQualif);
+            this.gbxContrat.Controls.Add(this.lblTypeContrat);
+            this.gbxContrat.Controls.Add(this.lblDebutContrat);
+            this.gbxContrat.Location = new System.Drawing.Point(11, 122);
+            this.gbxContrat.Name = "gbxContrat";
+            this.gbxContrat.Size = new System.Drawing.Size(536, 249);
+            this.gbxContrat.TabIndex = 9;
+            this.gbxContrat.TabStop = false;
+            this.gbxContrat.Text = "Contrat initial";
             // 
-            // dateTimePicker1
+            // dtpFin
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(554, 16);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(160, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dtpFin.Location = new System.Drawing.Point(366, 23);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(161, 20);
+            this.dtpFin.TabIndex = 16;
             // 
-            // label21
+            // lblInterim
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(469, 84);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 13);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "Intérim :";
+            this.lblInterim.AutoSize = true;
+            this.lblInterim.Location = new System.Drawing.Point(281, 123);
+            this.lblInterim.Name = "lblInterim";
+            this.lblInterim.Size = new System.Drawing.Size(92, 13);
+            this.lblInterim.TabIndex = 11;
+            this.lblInterim.Text = "Agence d\'Intérim :";
             // 
-            // label20
+            // lblMotif
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(474, 55);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 13);
-            this.label20.TabIndex = 10;
-            this.label20.Text = "Motif :";
+            this.lblMotif.AutoSize = true;
+            this.lblMotif.Location = new System.Drawing.Point(281, 59);
+            this.lblMotif.Name = "lblMotif";
+            this.lblMotif.Size = new System.Drawing.Size(36, 13);
+            this.lblMotif.TabIndex = 10;
+            this.lblMotif.Text = "Motif :";
             // 
-            // label19
+            // lblFinContrat
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(469, 16);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(79, 13);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Fin de Contrat :";
+            this.lblFinContrat.AutoSize = true;
+            this.lblFinContrat.Location = new System.Drawing.Point(281, 24);
+            this.lblFinContrat.Name = "lblFinContrat";
+            this.lblFinContrat.Size = new System.Drawing.Size(79, 13);
+            this.lblFinContrat.TabIndex = 9;
+            this.lblFinContrat.Text = "Fin de Contrat :";
             // 
-            // label18
+            // lblService
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(340, 122);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 13);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "label18";
+            this.lblService.AutoSize = true;
+            this.lblService.Location = new System.Drawing.Point(9, 182);
+            this.lblService.Name = "lblService";
+            this.lblService.Size = new System.Drawing.Size(49, 13);
+            this.lblService.TabIndex = 8;
+            this.lblService.Text = "Service :";
             // 
-            // label17
+            // lblEcole
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(469, 111);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(40, 13);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "Ecole :";
+            this.lblEcole.AutoSize = true;
+            this.lblEcole.Location = new System.Drawing.Point(281, 154);
+            this.lblEcole.Name = "lblEcole";
+            this.lblEcole.Size = new System.Drawing.Size(40, 13);
+            this.lblEcole.TabIndex = 7;
+            this.lblEcole.Text = "Ecole :";
             // 
-            // label15
+            // lblStatut
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(167, 122);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 13);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "label15";
+            this.lblStatut.AutoSize = true;
+            this.lblStatut.Location = new System.Drawing.Point(10, 149);
+            this.lblStatut.Name = "lblStatut";
+            this.lblStatut.Size = new System.Drawing.Size(41, 13);
+            this.lblStatut.TabIndex = 5;
+            this.lblStatut.Text = "Statut :";
             // 
-            // label14
+            // lblIndemnite
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(167, 73);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 13);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "label14";
+            this.lblIndemnite.AutoSize = true;
+            this.lblIndemnite.Location = new System.Drawing.Point(281, 185);
+            this.lblIndemnite.Name = "lblIndemnite";
+            this.lblIndemnite.Size = new System.Drawing.Size(64, 13);
+            this.lblIndemnite.TabIndex = 4;
+            this.lblIndemnite.Text = "Indémnités :";
             // 
-            // label13
+            // lblFonction
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(167, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "label13";
+            this.lblFonction.AutoSize = true;
+            this.lblFonction.Location = new System.Drawing.Point(9, 118);
+            this.lblFonction.Name = "lblFonction";
+            this.lblFonction.Size = new System.Drawing.Size(54, 13);
+            this.lblFonction.TabIndex = 3;
+            this.lblFonction.Text = "Fonction :";
             // 
-            // label12
+            // lblQualif
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(30, 122);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "label12";
+            this.lblQualif.AutoSize = true;
+            this.lblQualif.Location = new System.Drawing.Point(9, 88);
+            this.lblQualif.Name = "lblQualif";
+            this.lblQualif.Size = new System.Drawing.Size(120, 13);
+            this.lblQualif.TabIndex = 2;
+            this.lblQualif.Text = "Qualification Principale :";
             // 
-            // label11
+            // lblTypeContrat
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(30, 73);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "label11";
+            this.lblTypeContrat.AutoSize = true;
+            this.lblTypeContrat.Location = new System.Drawing.Point(9, 56);
+            this.lblTypeContrat.Name = "lblTypeContrat";
+            this.lblTypeContrat.Size = new System.Drawing.Size(89, 13);
+            this.lblTypeContrat.TabIndex = 1;
+            this.lblTypeContrat.Text = "Type de Contrat :";
             // 
-            // label10
+            // lblDebutContrat
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(30, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "label10";
+            this.lblDebutContrat.AutoSize = true;
+            this.lblDebutContrat.Location = new System.Drawing.Point(9, 24);
+            this.lblDebutContrat.Name = "lblDebutContrat";
+            this.lblDebutContrat.Size = new System.Drawing.Size(94, 13);
+            this.lblDebutContrat.TabIndex = 0;
+            this.lblDebutContrat.Text = "Début de Contrat :";
+            // 
+            // txtMat
+            // 
+            this.txtMat.Location = new System.Drawing.Point(17, 24);
+            this.txtMat.Name = "txtMat";
+            this.txtMat.Size = new System.Drawing.Size(37, 20);
+            this.txtMat.TabIndex = 0;
+            // 
+            // cbxCivil
+            // 
+            this.cbxCivil.FormattingEnabled = true;
+            this.cbxCivil.Location = new System.Drawing.Point(68, 24);
+            this.cbxCivil.Name = "cbxCivil";
+            this.cbxCivil.Size = new System.Drawing.Size(44, 21);
+            this.cbxCivil.TabIndex = 1;
+            // 
+            // txtNom
+            // 
+            this.txtNom.Location = new System.Drawing.Point(127, 25);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(129, 20);
+            this.txtNom.TabIndex = 2;
+            // 
+            // txtPrenom
+            // 
+            this.txtPrenom.Location = new System.Drawing.Point(272, 26);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(127, 20);
+            this.txtPrenom.TabIndex = 3;
+            // 
+            // cbxSitFam
+            // 
+            this.cbxSitFam.FormattingEnabled = true;
+            this.cbxSitFam.Location = new System.Drawing.Point(418, 25);
+            this.cbxSitFam.Name = "cbxSitFam";
+            this.cbxSitFam.Size = new System.Drawing.Size(121, 21);
+            this.cbxSitFam.TabIndex = 4;
+            // 
+            // txtAdress1
+            // 
+            this.txtAdress1.Location = new System.Drawing.Point(12, 83);
+            this.txtAdress1.Name = "txtAdress1";
+            this.txtAdress1.Size = new System.Drawing.Size(164, 20);
+            this.txtAdress1.TabIndex = 5;
+            // 
+            // txtAdress2
+            // 
+            this.txtAdress2.Location = new System.Drawing.Point(182, 83);
+            this.txtAdress2.Name = "txtAdress2";
+            this.txtAdress2.Size = new System.Drawing.Size(161, 20);
+            this.txtAdress2.TabIndex = 6;
+            // 
+            // txtCP
+            // 
+            this.txtCP.Location = new System.Drawing.Point(350, 83);
+            this.txtCP.Name = "txtCP";
+            this.txtCP.Size = new System.Drawing.Size(68, 20);
+            this.txtCP.TabIndex = 7;
+            // 
+            // txtVille
+            // 
+            this.txtVille.Location = new System.Drawing.Point(431, 83);
+            this.txtVille.Name = "txtVille";
+            this.txtVille.Size = new System.Drawing.Size(108, 20);
+            this.txtVille.TabIndex = 8;
+            // 
+            // dtpDebut
+            // 
+            this.dtpDebut.Location = new System.Drawing.Point(110, 22);
+            this.dtpDebut.Name = "dtpDebut";
+            this.dtpDebut.Size = new System.Drawing.Size(160, 20);
+            this.dtpDebut.TabIndex = 9;
+            // 
+            // cbxTypeContrat
+            // 
+            this.cbxTypeContrat.FormattingEnabled = true;
+            this.cbxTypeContrat.Location = new System.Drawing.Point(149, 56);
+            this.cbxTypeContrat.Name = "cbxTypeContrat";
+            this.cbxTypeContrat.Size = new System.Drawing.Size(121, 21);
+            this.cbxTypeContrat.TabIndex = 10;
+            // 
+            // cbxMotif
+            // 
+            this.cbxMotif.FormattingEnabled = true;
+            this.cbxMotif.Location = new System.Drawing.Point(366, 57);
+            this.cbxMotif.Name = "cbxMotif";
+            this.cbxMotif.Size = new System.Drawing.Size(161, 21);
+            this.cbxMotif.TabIndex = 17;
+            // 
+            // cbxQualif
+            // 
+            this.cbxQualif.FormattingEnabled = true;
+            this.cbxQualif.Location = new System.Drawing.Point(149, 85);
+            this.cbxQualif.Name = "cbxQualif";
+            this.cbxQualif.Size = new System.Drawing.Size(121, 21);
+            this.cbxQualif.TabIndex = 11;
+            // 
+            // cbxFonction
+            // 
+            this.cbxFonction.FormattingEnabled = true;
+            this.cbxFonction.Location = new System.Drawing.Point(149, 117);
+            this.cbxFonction.Name = "cbxFonction";
+            this.cbxFonction.Size = new System.Drawing.Size(121, 21);
+            this.cbxFonction.TabIndex = 12;
+            // 
+            // txtInterim
+            // 
+            this.txtInterim.Location = new System.Drawing.Point(393, 122);
+            this.txtInterim.Name = "txtInterim";
+            this.txtInterim.Size = new System.Drawing.Size(134, 20);
+            this.txtInterim.TabIndex = 18;
+            // 
+            // txtEcole
+            // 
+            this.txtEcole.Location = new System.Drawing.Point(393, 154);
+            this.txtEcole.Name = "txtEcole";
+            this.txtEcole.Size = new System.Drawing.Size(134, 20);
+            this.txtEcole.TabIndex = 19;
+            // 
+            // cbxStatut
+            // 
+            this.cbxStatut.FormattingEnabled = true;
+            this.cbxStatut.Location = new System.Drawing.Point(149, 146);
+            this.cbxStatut.Name = "cbxStatut";
+            this.cbxStatut.Size = new System.Drawing.Size(121, 21);
+            this.cbxStatut.TabIndex = 13;
+            // 
+            // cbxService
+            // 
+            this.cbxService.FormattingEnabled = true;
+            this.cbxService.Location = new System.Drawing.Point(149, 179);
+            this.cbxService.Name = "cbxService";
+            this.cbxService.Size = new System.Drawing.Size(121, 21);
+            this.cbxService.TabIndex = 14;
+            // 
+            // lblBrut
+            // 
+            this.lblBrut.AutoSize = true;
+            this.lblBrut.Location = new System.Drawing.Point(9, 212);
+            this.lblBrut.Name = "lblBrut";
+            this.lblBrut.Size = new System.Drawing.Size(108, 13);
+            this.lblBrut.TabIndex = 20;
+            this.lblBrut.Text = "Salaire brut mensuel :";
+            // 
+            // txtBrut
+            // 
+            this.txtBrut.Location = new System.Drawing.Point(149, 209);
+            this.txtBrut.Name = "txtBrut";
+            this.txtBrut.Size = new System.Drawing.Size(121, 20);
+            this.txtBrut.TabIndex = 15;
+            // 
+            // txtIndemnite
+            // 
+            this.txtIndemnite.Location = new System.Drawing.Point(393, 183);
+            this.txtIndemnite.Name = "txtIndemnite";
+            this.txtIndemnite.Size = new System.Drawing.Size(134, 20);
+            this.txtIndemnite.TabIndex = 21;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(346, 377);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 10;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.Location = new System.Drawing.Point(469, 377);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.TabIndex = 11;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
             // FrmAjoutCollaborateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(566, 406);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.txtVille);
+            this.Controls.Add(this.txtCP);
+            this.Controls.Add(this.txtAdress2);
+            this.Controls.Add(this.txtAdress1);
+            this.Controls.Add(this.cbxSitFam);
+            this.Controls.Add(this.txtPrenom);
+            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.cbxCivil);
+            this.Controls.Add(this.txtMat);
+            this.Controls.Add(this.gbxContrat);
+            this.Controls.Add(this.lblSitFam);
+            this.Controls.Add(this.lblVille);
+            this.Controls.Add(this.lblCP);
+            this.Controls.Add(this.lblAdress2);
+            this.Controls.Add(this.lblAdress1);
+            this.Controls.Add(this.lblCivil);
+            this.Controls.Add(this.lblPrenom);
+            this.Controls.Add(this.lblNom);
+            this.Controls.Add(this.lblMat);
             this.Name = "FrmAjoutCollaborateur";
             this.Text = "Enregistrer un nouveau Collaborateur";
             this.Load += new System.EventHandler(this.Enregistrer_un_nouveau_ollaborateur_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbxContrat.ResumeLayout(false);
+            this.gbxContrat.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,27 +510,50 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblMat;
+        private System.Windows.Forms.Label lblNom;
+        private System.Windows.Forms.Label lblPrenom;
+        private System.Windows.Forms.Label lblCivil;
+        private System.Windows.Forms.Label lblAdress1;
+        private System.Windows.Forms.Label lblAdress2;
+        private System.Windows.Forms.Label lblCP;
+        private System.Windows.Forms.Label lblVille;
+        private System.Windows.Forms.Label lblSitFam;
+        private System.Windows.Forms.GroupBox gbxContrat;
+        private System.Windows.Forms.DateTimePicker dtpFin;
+        private System.Windows.Forms.Label lblInterim;
+        private System.Windows.Forms.Label lblMotif;
+        private System.Windows.Forms.Label lblFinContrat;
+        private System.Windows.Forms.Label lblService;
+        private System.Windows.Forms.Label lblEcole;
+        private System.Windows.Forms.Label lblStatut;
+        private System.Windows.Forms.Label lblIndemnite;
+        private System.Windows.Forms.Label lblFonction;
+        private System.Windows.Forms.Label lblQualif;
+        private System.Windows.Forms.Label lblTypeContrat;
+        private System.Windows.Forms.Label lblDebutContrat;
+        private System.Windows.Forms.TextBox txtMat;
+        private System.Windows.Forms.ComboBox cbxCivil;
+        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtPrenom;
+        private System.Windows.Forms.ComboBox cbxSitFam;
+        private System.Windows.Forms.TextBox txtAdress1;
+        private System.Windows.Forms.TextBox txtAdress2;
+        private System.Windows.Forms.TextBox txtCP;
+        private System.Windows.Forms.TextBox txtVille;
+        private System.Windows.Forms.DateTimePicker dtpDebut;
+        private System.Windows.Forms.ComboBox cbxTypeContrat;
+        private System.Windows.Forms.ComboBox cbxMotif;
+        private System.Windows.Forms.ComboBox cbxQualif;
+        private System.Windows.Forms.ComboBox cbxFonction;
+        private System.Windows.Forms.TextBox txtInterim;
+        private System.Windows.Forms.TextBox txtEcole;
+        private System.Windows.Forms.ComboBox cbxStatut;
+        private System.Windows.Forms.ComboBox cbxService;
+        private System.Windows.Forms.TextBox txtBrut;
+        private System.Windows.Forms.Label lblBrut;
+        private System.Windows.Forms.TextBox txtIndemnite;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnAnnuler;
     }
 }
