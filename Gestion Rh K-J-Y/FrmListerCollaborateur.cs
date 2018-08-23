@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Gestion_Rh_K_J_Y
 {
-    public partial class FrmLister : Form
+    public partial class FrmListerCollaborateur : Form
     {
         
-        public FrmLister()
+        public FrmListerCollaborateur()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Rh_K_J_Y
 {
-    partial class FrmLister
+    partial class FrmListerCollaborateur
     {
         /// <summary>
         /// Required designer variable.

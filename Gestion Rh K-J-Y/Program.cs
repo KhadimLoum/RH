@@ -17,7 +17,7 @@ namespace Gestion_Rh_K_J_Y
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLister());
+            Application.Run(new FrmListerCollaborateur());
         }
 
     }
