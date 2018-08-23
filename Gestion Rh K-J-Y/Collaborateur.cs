@@ -232,10 +232,10 @@ namespace Gestion_Rh_K_J_Y
             this.Id = iden;
             this.Mdp = motpasse;
                 Collaborateur c1, c2, c3, c4;
-                c1 = new Collaborateur(1, "M", "Loum", "Khadim", 73000, "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2654,6547);
-                c2 = new Collaborateur(2, "M", "Loum", "Khadim", 73000, "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2789,6541);
-                c3 = new Collaborateur(3, "M", "Loum", "Khadim", 73000, "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2456,6325);
-                c4 = new Collaborateur(4, "M", "Loum", "Khadim", 73000, "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2346,3156);
+                c1 = new Collaborateur(1, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2654,6547);
+                c2 = new Collaborateur(2, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2789,6541);
+                c3 = new Collaborateur(3, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2456,6325);
+                c4 = new Collaborateur(4, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion",2346,3156);
 
             Donnees.listCollaborateur.Add(c1.matricule, c1);
             Donnees.listCollaborateur.Add(c2.matricule, c2);

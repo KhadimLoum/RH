@@ -15,6 +15,7 @@ namespace Gestion_Rh_K_J_Y
         public MDI()
         {
             InitializeComponent();
+            Donnees.MDI = this;
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -48,6 +49,13 @@ namespace Gestion_Rh_K_J_Y
         }
 
         private void listeDesCollaborateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListerCollaborateur listCollaborateurs = new FrmListerCollaborateur();
+            listCollaborateurs.MdiParent = this;
+            listCollaborateurs.Show();
+        }
+
+        private void MDI_Load(object sender, EventArgs e)
         {
 
         }
