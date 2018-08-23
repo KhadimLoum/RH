@@ -14,6 +14,10 @@ namespace Gestion_Rh_K_J_Y
     {
         public FrmAjoutCollaborateur()
         {
+        }
+
+        public FrmAjoutCollaborateur(Collaborateur leCollaborateur)
+        {
             InitializeComponent();
         }
 

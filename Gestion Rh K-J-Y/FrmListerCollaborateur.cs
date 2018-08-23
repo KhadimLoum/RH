@@ -24,11 +24,22 @@ namespace Gestion_Rh_K_J_Y
         public void init()
         {
             Collaborateur c1, c2, c3, c4;
-            c1 = new Collaborateur(1, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion", 2654, 6547);
-            c2 = new Collaborateur(2, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion", 2789, 6541);
-            c3 = new Collaborateur(3, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion", 2456, 6325);
-            c4 = new Collaborateur(4, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue des Chapélis", "", 20000, "Boss", "Célibataire", "Administartion", 2346, 3156);
+            c1 = new Collaborateur(1, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue d", "6565", 20000, "Boss", "Célibataire", "Administartion", 2654, 6547);
+            c2 = new Collaborateur(2, "M", "Loum", "Khadim", "73000", "Orléans", "5 rue ", "8768766", 20000, "Boss", "Célibataire", "Administartion", 2789, 6541);
+            c3 = new Collaborateur(3, "M", "Loum", "Khadim", "73000", "Orléans", "5 r", "678687", 20000, "Boss", "Célibataire", "Administartion", 2456, 6325);
+            c4 = new Collaborateur(4, "M", "Loum", "Khadim", "73000", "Orléans", "55s", "676576", 20000, "Boss", "Célibataire", "Administartion", 2346, 3156);
+            if (Donnees.listCollaborateur != null)
+            {
+                Donnees.listCollaborateur.Clear();
+            }
 
+            Donnees.listCollaborateur.Add(c1.MATRICULE, c1);
+            Donnees.listCollaborateur.Add(c2.MATRICULE, c2);
+            Donnees.listCollaborateur.Add(c3.MATRICULE, c3);
+            Donnees.listCollaborateur.Add(c4.MATRICULE, c4);
+
+
+            this.rbService.Checked = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -45,7 +56,7 @@ namespace Gestion_Rh_K_J_Y
         {
 
         }
-       
+
         public void afficherCollaborateurs()
         {
             // DataTable : pour recopier les stagiaires (stockés dans la collection) ;
@@ -82,14 +93,14 @@ namespace Gestion_Rh_K_J_Y
                 dr[9] = Collabo.SITUATIONFAMILIALE;
 
                 // ajout de la ligne à la Datatable
-                dt.Rows.Add(dr); 
+                dt.Rows.Add(dr);
 
             }
 
             // donne les donnee a la datagridview
             //Relie DataTABLE a DATAGRID
             this.dgvListCollaborateurs.DataSource = dt.DefaultView;
-           
+
 
             // VALIDE BTN SUPPRIMER SI QUELQUECHOSE EST SELECTIONER EN DATAGRIVIEW
             this.btnSupprimer.Enabled = (this.dgvListCollaborateurs.SelectedRows == null ? false : true);
@@ -133,5 +144,77 @@ namespace Gestion_Rh_K_J_Y
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
-    }
+
+        private void btnLancer_Click(object sender, EventArgs e)
+        {
+            if (this.txtRecherche != null)
+            {
+                if (this.rbService.Checked == true)
+                {
+                    ((DataView)(this.dgvListCollaborateurs.DataSource)).RowFilter = "Service like '%" +
+               txtRecherche.Text + "%'";
+                }
+                else if (this.rbtNom.Checked == true)
+                {
+                    ((DataView)(this.dgvListCollaborateurs.DataSource)).RowFilter = "Nom like '%" +
+                   txtRecherche.Text + "%'";
+                }
+                else if (this.rbEtatCivile.Checked == true)
+                {
+
+                    ((DataView)(this.dgvListCollaborateurs.DataSource)).RowFilter = string.Format("Etat_Civil LIKE '{0}'", txtRecherche.Text); ;
+                }
+
+            }
+        }
+
+        private void rbtAfficherTout_CheckedChanged(object sender, EventArgs e)
+        {
+            this.txtRecherche.Text = null;
+            ((DataView)(this.dgvListCollaborateurs.DataSource)).RowFilter = null;
+            this.rbService.Checked = true;
+            // on raffraichit la liste des Collaborateurs
+            this.afficherCollaborateurs();
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void dgvListCollaborateurs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            //Ouvrir la feuille détail en lecture seule en y affichant
+            //le Collaborateur qui correspond à la ligne double-cliquée
+            Int32 leMatcollaborateur;
+
+            try
+            {
+
+                //récupère le matricule du Collaborateur cliqué dans la datagridview
+                leMatcollaborateur = (Int32)(this.dgvListCollaborateurs.CurrentRow.Cells[0].Value);
+
+                //MessageBox.Show("Le Numéro du Collaborateur est :" + leMatcollaborateur);
+
+                Collaborateur leCollaborateur = Donnees.listCollaborateur[leMatcollaborateur] as Collaborateur;
+
+                //Collaborateur leCollaborateur = Donnees.Lcl.RechercherClient(leMatcollaborateur) as Collaborateur;
+
+                //MessageBox.Show("Le Collaborateur est :" + leCollaborateur);
+
+                // instancie un form détail pour ce Collaborateur (pour préparer la 
+                // modification du Collaborateur
+
+                FrmAjoutCollaborateur frmVisu = new FrmAjoutCollaborateur(leCollaborateur);
+                frmVisu.ShowDialog();
+                this.afficherCollaborateurs();
+            }
+            catch(Exception esp)
+            {
+                MessageBox.Show("lalalalalalala");
+            }
+
+
+
+    }    }
 }

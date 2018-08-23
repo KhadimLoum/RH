@@ -29,19 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dgvListCollaborateurs = new System.Windows.Forms.DataGridView();
-            this.ColumnMat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEtatcivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPrénom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCodeP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnVille = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnAdresse1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnAdresse2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSalaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnQualification = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSituationF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnService = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblRecherche = new System.Windows.Forms.Label();
@@ -50,96 +37,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbtAfficherTout = new System.Windows.Forms.RadioButton();
             this.rbtNom = new System.Windows.Forms.RadioButton();
-            this.rbtService = new System.Windows.Forms.RadioButton();
+            this.rbService = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnFermer = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).BeginInit();
+            this.rbEtatCivile = new System.Windows.Forms.RadioButton();
+            this.dgvListCollaborateurs = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvListCollaborateurs
-            // 
-            this.dgvListCollaborateurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListCollaborateurs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnMat,
-            this.ColumnEtatcivil,
-            this.ColumnNom,
-            this.ColumnPrénom,
-            this.ColumnCodeP,
-            this.ColumnVille,
-            this.ColumnAdresse1,
-            this.ColumnAdresse2,
-            this.ColumnSalaire,
-            this.ColumnQualification,
-            this.ColumnSituationF,
-            this.ColumnService});
-            this.dgvListCollaborateurs.Location = new System.Drawing.Point(50, 92);
-            this.dgvListCollaborateurs.Name = "dgvListCollaborateurs";
-            this.dgvListCollaborateurs.Size = new System.Drawing.Size(544, 137);
-            this.dgvListCollaborateurs.TabIndex = 0;
-            this.dgvListCollaborateurs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // ColumnMat
-            // 
-            this.ColumnMat.HeaderText = "Matricule";
-            this.ColumnMat.Name = "ColumnMat";
-            // 
-            // ColumnEtatcivil
-            // 
-            this.ColumnEtatcivil.HeaderText = "Etat civil";
-            this.ColumnEtatcivil.Name = "ColumnEtatcivil";
-            // 
-            // ColumnNom
-            // 
-            this.ColumnNom.HeaderText = "Nom";
-            this.ColumnNom.Name = "ColumnNom";
-            // 
-            // ColumnPrénom
-            // 
-            this.ColumnPrénom.HeaderText = "Prénom";
-            this.ColumnPrénom.Name = "ColumnPrénom";
-            // 
-            // ColumnCodeP
-            // 
-            this.ColumnCodeP.HeaderText = "Code postal";
-            this.ColumnCodeP.Name = "ColumnCodeP";
-            // 
-            // ColumnVille
-            // 
-            this.ColumnVille.HeaderText = "Ville";
-            this.ColumnVille.Name = "ColumnVille";
-            // 
-            // ColumnAdresse1
-            // 
-            this.ColumnAdresse1.HeaderText = "Adresse 1";
-            this.ColumnAdresse1.Name = "ColumnAdresse1";
-            // 
-            // ColumnAdresse2
-            // 
-            this.ColumnAdresse2.HeaderText = "Adresse 2";
-            this.ColumnAdresse2.Name = "ColumnAdresse2";
-            // 
-            // ColumnSalaire
-            // 
-            this.ColumnSalaire.HeaderText = "Salaire";
-            this.ColumnSalaire.Name = "ColumnSalaire";
-            // 
-            // ColumnQualification
-            // 
-            this.ColumnQualification.HeaderText = "Qualification";
-            this.ColumnQualification.Name = "ColumnQualification";
-            // 
-            // ColumnSituationF
-            // 
-            this.ColumnSituationF.HeaderText = "Situation Familiale";
-            this.ColumnSituationF.Name = "ColumnSituationF";
-            // 
-            // ColumnService
-            // 
-            this.ColumnService.HeaderText = "Service";
-            this.ColumnService.Name = "ColumnService";
             // 
             // contextMenuStrip1
             // 
@@ -180,12 +87,14 @@
             this.btnLancer.TabIndex = 3;
             this.btnLancer.Text = "Lancer";
             this.btnLancer.UseVisualStyleBackColor = true;
+            this.btnLancer.Click += new System.EventHandler(this.btnLancer_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rbEtatCivile);
             this.groupBox1.Controls.Add(this.rbtAfficherTout);
             this.groupBox1.Controls.Add(this.rbtNom);
-            this.groupBox1.Controls.Add(this.rbtService);
+            this.groupBox1.Controls.Add(this.rbService);
             this.groupBox1.Enabled = false;
             this.groupBox1.Location = new System.Drawing.Point(66, 32);
             this.groupBox1.Name = "groupBox1";
@@ -204,6 +113,7 @@
             this.rbtAfficherTout.TabStop = true;
             this.rbtAfficherTout.Text = "Afficher Tout";
             this.rbtAfficherTout.UseVisualStyleBackColor = true;
+            this.rbtAfficherTout.CheckedChanged += new System.EventHandler(this.rbtAfficherTout_CheckedChanged);
             // 
             // rbtNom
             // 
@@ -216,20 +126,20 @@
             this.rbtNom.Text = "Nom";
             this.rbtNom.UseVisualStyleBackColor = true;
             // 
-            // rbtService
+            // rbService
             // 
-            this.rbtService.AutoSize = true;
-            this.rbtService.Location = new System.Drawing.Point(16, 19);
-            this.rbtService.Name = "rbtService";
-            this.rbtService.Size = new System.Drawing.Size(61, 17);
-            this.rbtService.TabIndex = 0;
-            this.rbtService.TabStop = true;
-            this.rbtService.Text = "Service";
-            this.rbtService.UseVisualStyleBackColor = true;
+            this.rbService.AutoSize = true;
+            this.rbService.Location = new System.Drawing.Point(16, 19);
+            this.rbService.Name = "rbService";
+            this.rbService.Size = new System.Drawing.Size(61, 17);
+            this.rbService.TabIndex = 0;
+            this.rbService.TabStop = true;
+            this.rbService.Text = "Service";
+            this.rbService.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(323, 235);
+            this.button1.Location = new System.Drawing.Point(371, 521);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(74, 23);
             this.button1.TabIndex = 3;
@@ -238,16 +148,17 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(437, 235);
+            this.btnSupprimer.Location = new System.Drawing.Point(471, 508);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 5;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnFermer
             // 
-            this.btnFermer.Location = new System.Drawing.Point(534, 235);
+            this.btnFermer.Location = new System.Drawing.Point(573, 495);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(75, 23);
             this.btnFermer.TabIndex = 6;
@@ -255,11 +166,31 @@
             this.btnFermer.UseVisualStyleBackColor = true;
             this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
+            // rbEtatCivile
+            // 
+            this.rbEtatCivile.AutoSize = true;
+            this.rbEtatCivile.Location = new System.Drawing.Point(189, 19);
+            this.rbEtatCivile.Name = "rbEtatCivile";
+            this.rbEtatCivile.Size = new System.Drawing.Size(66, 17);
+            this.rbEtatCivile.TabIndex = 4;
+            this.rbEtatCivile.TabStop = true;
+            this.rbEtatCivile.Text = "Etat Civil";
+            this.rbEtatCivile.UseVisualStyleBackColor = true;
+            // 
+            // dgvListCollaborateurs
+            // 
+            this.dgvListCollaborateurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListCollaborateurs.Location = new System.Drawing.Point(94, 92);
+            this.dgvListCollaborateurs.Name = "dgvListCollaborateurs";
+            this.dgvListCollaborateurs.Size = new System.Drawing.Size(852, 377);
+            this.dgvListCollaborateurs.TabIndex = 7;
+            // 
             // FrmListerCollaborateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 283);
+            this.ClientSize = new System.Drawing.Size(1040, 600);
+            this.Controls.Add(this.dgvListCollaborateurs);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.button1);
@@ -267,34 +198,19 @@
             this.Controls.Add(this.btnLancer);
             this.Controls.Add(this.txtRecherche);
             this.Controls.Add(this.lblRecherche);
-            this.Controls.Add(this.dgvListCollaborateurs);
             this.Name = "FrmListerCollaborateur";
             this.Text = "Lancer";
             this.Load += new System.EventHandler(this.FrmLister_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvListCollaborateurs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEtatcivil;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrénom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodeP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnVille;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAdresse1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAdresse2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSalaire;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQualification;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSituationF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnService;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.Label lblRecherche;
@@ -302,10 +218,12 @@
         private System.Windows.Forms.Button btnLancer;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbtNom;
-        private System.Windows.Forms.RadioButton rbtService;
+        private System.Windows.Forms.RadioButton rbService;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.RadioButton rbtAfficherTout;
         private System.Windows.Forms.Button btnFermer;
+        private System.Windows.Forms.RadioButton rbEtatCivile;
+        private System.Windows.Forms.DataGridView dgvListCollaborateurs;
     }
 }
