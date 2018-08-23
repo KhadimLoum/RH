@@ -50,14 +50,34 @@ namespace Gestion_Rh_K_J_Y
 
         private void listeDesCollaborateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmListerCollaborateur listCollaborateurs = new FrmListerCollaborateur();
-            listCollaborateurs.MdiParent = this;
-            listCollaborateurs.Show();
+            
         }
 
         private void MDI_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void listeDesCollaborateursToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void listeDeToutLesCollaborateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void listeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FrmListerCollaborateur listCollaborateurs = new FrmListerCollaborateur();
+            listCollaborateurs.MDIparent = this;
+            listCollaborateurs.Show();
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
