@@ -79,5 +79,12 @@ namespace Gestion_Rh_K_J_Y
         {
             Application.Exit();
         }
+
+        private void ajouterDesCollaborateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAjoutCollaborateur listCollaborateurs = new FrmAjoutCollaborateur();
+            listCollaborateurs.MDIparent = this;
+            listCollaborateurs.Show();
+        }
     }
 }

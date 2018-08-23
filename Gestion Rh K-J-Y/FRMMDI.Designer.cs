@@ -77,6 +77,7 @@
             this.ajouterDesCollaborateursToolStripMenuItem.Name = "ajouterDesCollaborateursToolStripMenuItem";
             this.ajouterDesCollaborateursToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.ajouterDesCollaborateursToolStripMenuItem.Text = "Ajouter des collaborateurs";
+            this.ajouterDesCollaborateursToolStripMenuItem.Click += new System.EventHandler(this.ajouterDesCollaborateursToolStripMenuItem_Click);
             // 
             // connexionToolStripMenuItem
             // 

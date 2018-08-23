@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dgvLister = new System.Windows.Forms.DataGridView();
+            this.dgvListCollaborateurs = new System.Windows.Forms.DataGridView();
             this.ColumnMat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnEtatcivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,17 +52,17 @@
             this.rbtNom = new System.Windows.Forms.RadioButton();
             this.rbtService = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnFermer = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLister)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvLister
+            // dgvListCollaborateurs
             // 
-            this.dgvLister.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLister.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListCollaborateurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListCollaborateurs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnMat,
             this.ColumnEtatcivil,
             this.ColumnNom,
@@ -75,11 +75,11 @@
             this.ColumnQualification,
             this.ColumnSituationF,
             this.ColumnService});
-            this.dgvLister.Location = new System.Drawing.Point(12, 92);
-            this.dgvLister.Name = "dgvLister";
-            this.dgvLister.Size = new System.Drawing.Size(625, 137);
-            this.dgvLister.TabIndex = 0;
-            this.dgvLister.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dgvListCollaborateurs.Location = new System.Drawing.Point(50, 92);
+            this.dgvListCollaborateurs.Name = "dgvListCollaborateurs";
+            this.dgvListCollaborateurs.Size = new System.Drawing.Size(544, 137);
+            this.dgvListCollaborateurs.TabIndex = 0;
+            this.dgvListCollaborateurs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // ColumnMat
             // 
@@ -236,14 +236,14 @@
             this.button1.Text = "Ajouter Collaborateur";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSupprimer
             // 
-            this.button2.Location = new System.Drawing.Point(437, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Supprimer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Location = new System.Drawing.Point(437, 235);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.TabIndex = 5;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
             // 
             // btnFermer
             // 
@@ -259,19 +259,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 267);
+            this.ClientSize = new System.Drawing.Size(1368, 283);
             this.Controls.Add(this.btnFermer);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLancer);
             this.Controls.Add(this.txtRecherche);
             this.Controls.Add(this.lblRecherche);
-            this.Controls.Add(this.dgvLister);
+            this.Controls.Add(this.dgvListCollaborateurs);
             this.Name = "FrmListerCollaborateur";
             this.Text = "Lancer";
             this.Load += new System.EventHandler(this.FrmLister_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLister)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListCollaborateurs)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -282,7 +282,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvLister;
+        private System.Windows.Forms.DataGridView dgvListCollaborateurs;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMat;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEtatcivil;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNom;
@@ -304,7 +304,7 @@
         private System.Windows.Forms.RadioButton rbtNom;
         private System.Windows.Forms.RadioButton rbtService;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.RadioButton rbtAfficherTout;
         private System.Windows.Forms.Button btnFermer;
     }

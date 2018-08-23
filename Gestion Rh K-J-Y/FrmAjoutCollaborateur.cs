@@ -17,6 +17,8 @@ namespace Gestion_Rh_K_J_Y
             InitializeComponent();
         }
 
+        public MDI MDIparent { get; internal set; }
+
         private void Enregistrer_un_nouveau_ollaborateur_Load(object sender, EventArgs e)
         {
 
