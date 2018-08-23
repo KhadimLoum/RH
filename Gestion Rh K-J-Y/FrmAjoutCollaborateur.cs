@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestion_Rh_K_J_Y
 {
-    public partial class Enregistrer_un_nouveau_ollaborateur : Form
+    public partial class FrmAjoutCollaborateur : Form
     {
-        public Enregistrer_un_nouveau_ollaborateur()
+        public FrmAjoutCollaborateur()
         {
             InitializeComponent();
         }
