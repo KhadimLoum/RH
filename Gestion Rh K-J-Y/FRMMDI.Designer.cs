@@ -35,9 +35,9 @@
             this.connexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.déconnexionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeDesCollaborateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeDesCollaborateursToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,8 +46,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fichierToolStripMenuItem,
             this.rHToolStripMenuItem,
+            this.listeToolStripMenuItem,
             this.connexionToolStripMenuItem,
-            this.listeDesCollaborateursToolStripMenuItem,
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -57,6 +57,8 @@
             // 
             // fichierToolStripMenuItem
             // 
+            this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
@@ -98,26 +100,25 @@
             this.déconnexionToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.déconnexionToolStripMenuItem1.Text = "Déconnexion";
             // 
-            // listeDesCollaborateursToolStripMenuItem
-            // 
-            this.listeDesCollaborateursToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listeDesCollaborateursToolStripMenuItem1});
-            this.listeDesCollaborateursToolStripMenuItem.Name = "listeDesCollaborateursToolStripMenuItem";
-            this.listeDesCollaborateursToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.listeDesCollaborateursToolStripMenuItem.Text = "Affichage";
-            this.listeDesCollaborateursToolStripMenuItem.Click += new System.EventHandler(this.listeDesCollaborateursToolStripMenuItem_Click);
-            // 
-            // listeDesCollaborateursToolStripMenuItem1
-            // 
-            this.listeDesCollaborateursToolStripMenuItem1.Name = "listeDesCollaborateursToolStripMenuItem1";
-            this.listeDesCollaborateursToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.listeDesCollaborateursToolStripMenuItem1.Text = "Liste des Collaborateurs";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
             this.toolStripMenuItem1.Text = "?";
+            // 
+            // listeToolStripMenuItem
+            // 
+            this.listeToolStripMenuItem.Name = "listeToolStripMenuItem";
+            this.listeToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.listeToolStripMenuItem.Text = "Liste";
+            this.listeToolStripMenuItem.Click += new System.EventHandler(this.listeToolStripMenuItem_Click);
+            // 
+            // quitterToolStripMenuItem
+            // 
+            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // MDI
             // 
@@ -144,9 +145,9 @@
         private System.Windows.Forms.ToolStripMenuItem déconnexionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem rHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterDesCollaborateursToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listeDesCollaborateursToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listeDesCollaborateursToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem listeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
     }
 }

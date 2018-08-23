@@ -12,7 +12,8 @@ namespace Gestion_Rh_K_J_Y
 {
     public partial class FrmListerCollaborateur : Form
     {
-        
+        public MDI MDIparent { get; internal set; }
+
         public FrmListerCollaborateur()
         {
             InitializeComponent();
@@ -69,6 +70,19 @@ namespace Gestion_Rh_K_J_Y
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmListerCollaborateur FrmPrinc = new FrmListerCollaborateur();
+            FrmPrinc.Show();
+            this.Hide();
+        }
+
+        private void btnFermer_Click(object sender, EventArgs e)
+        {
+           
+            this.Hide();
         }
     }
 }
