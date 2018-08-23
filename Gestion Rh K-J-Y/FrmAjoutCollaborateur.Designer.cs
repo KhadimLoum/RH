@@ -38,6 +38,18 @@
             this.lblVille = new System.Windows.Forms.Label();
             this.lblSitFam = new System.Windows.Forms.Label();
             this.gbxContrat = new System.Windows.Forms.GroupBox();
+            this.txtIndemnite = new System.Windows.Forms.TextBox();
+            this.txtBrut = new System.Windows.Forms.TextBox();
+            this.lblBrut = new System.Windows.Forms.Label();
+            this.cbxService = new System.Windows.Forms.ComboBox();
+            this.cbxStatut = new System.Windows.Forms.ComboBox();
+            this.txtEcole = new System.Windows.Forms.TextBox();
+            this.txtInterim = new System.Windows.Forms.TextBox();
+            this.cbxFonction = new System.Windows.Forms.ComboBox();
+            this.cbxQualif = new System.Windows.Forms.ComboBox();
+            this.cbxMotif = new System.Windows.Forms.ComboBox();
+            this.cbxTypeContrat = new System.Windows.Forms.ComboBox();
+            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
             this.dtpFin = new System.Windows.Forms.DateTimePicker();
             this.lblInterim = new System.Windows.Forms.Label();
             this.lblMotif = new System.Windows.Forms.Label();
@@ -59,18 +71,6 @@
             this.txtAdress2 = new System.Windows.Forms.TextBox();
             this.txtCP = new System.Windows.Forms.TextBox();
             this.txtVille = new System.Windows.Forms.TextBox();
-            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
-            this.cbxTypeContrat = new System.Windows.Forms.ComboBox();
-            this.cbxMotif = new System.Windows.Forms.ComboBox();
-            this.cbxQualif = new System.Windows.Forms.ComboBox();
-            this.cbxFonction = new System.Windows.Forms.ComboBox();
-            this.txtInterim = new System.Windows.Forms.TextBox();
-            this.txtEcole = new System.Windows.Forms.TextBox();
-            this.cbxStatut = new System.Windows.Forms.ComboBox();
-            this.cbxService = new System.Windows.Forms.ComboBox();
-            this.lblBrut = new System.Windows.Forms.Label();
-            this.txtBrut = new System.Windows.Forms.TextBox();
-            this.txtIndemnite = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.gbxContrat.SuspendLayout();
@@ -191,6 +191,98 @@
             this.gbxContrat.TabStop = false;
             this.gbxContrat.Text = "Contrat initial";
             // 
+            // txtIndemnite
+            // 
+            this.txtIndemnite.Location = new System.Drawing.Point(393, 153);
+            this.txtIndemnite.Name = "txtIndemnite";
+            this.txtIndemnite.Size = new System.Drawing.Size(134, 20);
+            this.txtIndemnite.TabIndex = 21;
+            // 
+            // txtBrut
+            // 
+            this.txtBrut.Location = new System.Drawing.Point(149, 209);
+            this.txtBrut.Name = "txtBrut";
+            this.txtBrut.Size = new System.Drawing.Size(121, 20);
+            this.txtBrut.TabIndex = 15;
+            // 
+            // lblBrut
+            // 
+            this.lblBrut.AutoSize = true;
+            this.lblBrut.Location = new System.Drawing.Point(9, 212);
+            this.lblBrut.Name = "lblBrut";
+            this.lblBrut.Size = new System.Drawing.Size(108, 13);
+            this.lblBrut.TabIndex = 20;
+            this.lblBrut.Text = "Salaire brut mensuel :";
+            // 
+            // cbxService
+            // 
+            this.cbxService.FormattingEnabled = true;
+            this.cbxService.Location = new System.Drawing.Point(149, 179);
+            this.cbxService.Name = "cbxService";
+            this.cbxService.Size = new System.Drawing.Size(121, 21);
+            this.cbxService.TabIndex = 14;
+            // 
+            // cbxStatut
+            // 
+            this.cbxStatut.FormattingEnabled = true;
+            this.cbxStatut.Location = new System.Drawing.Point(149, 146);
+            this.cbxStatut.Name = "cbxStatut";
+            this.cbxStatut.Size = new System.Drawing.Size(121, 21);
+            this.cbxStatut.TabIndex = 13;
+            // 
+            // txtEcole
+            // 
+            this.txtEcole.Location = new System.Drawing.Point(393, 124);
+            this.txtEcole.Name = "txtEcole";
+            this.txtEcole.Size = new System.Drawing.Size(134, 20);
+            this.txtEcole.TabIndex = 19;
+            // 
+            // txtInterim
+            // 
+            this.txtInterim.Location = new System.Drawing.Point(393, 92);
+            this.txtInterim.Name = "txtInterim";
+            this.txtInterim.Size = new System.Drawing.Size(134, 20);
+            this.txtInterim.TabIndex = 18;
+            // 
+            // cbxFonction
+            // 
+            this.cbxFonction.FormattingEnabled = true;
+            this.cbxFonction.Location = new System.Drawing.Point(149, 117);
+            this.cbxFonction.Name = "cbxFonction";
+            this.cbxFonction.Size = new System.Drawing.Size(121, 21);
+            this.cbxFonction.TabIndex = 12;
+            // 
+            // cbxQualif
+            // 
+            this.cbxQualif.FormattingEnabled = true;
+            this.cbxQualif.Location = new System.Drawing.Point(149, 85);
+            this.cbxQualif.Name = "cbxQualif";
+            this.cbxQualif.Size = new System.Drawing.Size(121, 21);
+            this.cbxQualif.TabIndex = 11;
+            // 
+            // cbxMotif
+            // 
+            this.cbxMotif.FormattingEnabled = true;
+            this.cbxMotif.Location = new System.Drawing.Point(366, 57);
+            this.cbxMotif.Name = "cbxMotif";
+            this.cbxMotif.Size = new System.Drawing.Size(161, 21);
+            this.cbxMotif.TabIndex = 17;
+            // 
+            // cbxTypeContrat
+            // 
+            this.cbxTypeContrat.FormattingEnabled = true;
+            this.cbxTypeContrat.Location = new System.Drawing.Point(149, 56);
+            this.cbxTypeContrat.Name = "cbxTypeContrat";
+            this.cbxTypeContrat.Size = new System.Drawing.Size(121, 21);
+            this.cbxTypeContrat.TabIndex = 10;
+            // 
+            // dtpDebut
+            // 
+            this.dtpDebut.Location = new System.Drawing.Point(110, 22);
+            this.dtpDebut.Name = "dtpDebut";
+            this.dtpDebut.Size = new System.Drawing.Size(160, 20);
+            this.dtpDebut.TabIndex = 9;
+            // 
             // dtpFin
             // 
             this.dtpFin.Location = new System.Drawing.Point(366, 23);
@@ -201,7 +293,7 @@
             // lblInterim
             // 
             this.lblInterim.AutoSize = true;
-            this.lblInterim.Location = new System.Drawing.Point(281, 123);
+            this.lblInterim.Location = new System.Drawing.Point(281, 93);
             this.lblInterim.Name = "lblInterim";
             this.lblInterim.Size = new System.Drawing.Size(92, 13);
             this.lblInterim.TabIndex = 11;
@@ -237,7 +329,7 @@
             // lblEcole
             // 
             this.lblEcole.AutoSize = true;
-            this.lblEcole.Location = new System.Drawing.Point(281, 154);
+            this.lblEcole.Location = new System.Drawing.Point(281, 124);
             this.lblEcole.Name = "lblEcole";
             this.lblEcole.Size = new System.Drawing.Size(40, 13);
             this.lblEcole.TabIndex = 7;
@@ -255,7 +347,7 @@
             // lblIndemnite
             // 
             this.lblIndemnite.AutoSize = true;
-            this.lblIndemnite.Location = new System.Drawing.Point(281, 185);
+            this.lblIndemnite.Location = new System.Drawing.Point(281, 155);
             this.lblIndemnite.Name = "lblIndemnite";
             this.lblIndemnite.Size = new System.Drawing.Size(64, 13);
             this.lblIndemnite.TabIndex = 4;
@@ -361,98 +453,6 @@
             this.txtVille.Name = "txtVille";
             this.txtVille.Size = new System.Drawing.Size(108, 20);
             this.txtVille.TabIndex = 8;
-            // 
-            // dtpDebut
-            // 
-            this.dtpDebut.Location = new System.Drawing.Point(110, 22);
-            this.dtpDebut.Name = "dtpDebut";
-            this.dtpDebut.Size = new System.Drawing.Size(160, 20);
-            this.dtpDebut.TabIndex = 9;
-            // 
-            // cbxTypeContrat
-            // 
-            this.cbxTypeContrat.FormattingEnabled = true;
-            this.cbxTypeContrat.Location = new System.Drawing.Point(149, 56);
-            this.cbxTypeContrat.Name = "cbxTypeContrat";
-            this.cbxTypeContrat.Size = new System.Drawing.Size(121, 21);
-            this.cbxTypeContrat.TabIndex = 10;
-            // 
-            // cbxMotif
-            // 
-            this.cbxMotif.FormattingEnabled = true;
-            this.cbxMotif.Location = new System.Drawing.Point(366, 57);
-            this.cbxMotif.Name = "cbxMotif";
-            this.cbxMotif.Size = new System.Drawing.Size(161, 21);
-            this.cbxMotif.TabIndex = 17;
-            // 
-            // cbxQualif
-            // 
-            this.cbxQualif.FormattingEnabled = true;
-            this.cbxQualif.Location = new System.Drawing.Point(149, 85);
-            this.cbxQualif.Name = "cbxQualif";
-            this.cbxQualif.Size = new System.Drawing.Size(121, 21);
-            this.cbxQualif.TabIndex = 11;
-            // 
-            // cbxFonction
-            // 
-            this.cbxFonction.FormattingEnabled = true;
-            this.cbxFonction.Location = new System.Drawing.Point(149, 117);
-            this.cbxFonction.Name = "cbxFonction";
-            this.cbxFonction.Size = new System.Drawing.Size(121, 21);
-            this.cbxFonction.TabIndex = 12;
-            // 
-            // txtInterim
-            // 
-            this.txtInterim.Location = new System.Drawing.Point(393, 122);
-            this.txtInterim.Name = "txtInterim";
-            this.txtInterim.Size = new System.Drawing.Size(134, 20);
-            this.txtInterim.TabIndex = 18;
-            // 
-            // txtEcole
-            // 
-            this.txtEcole.Location = new System.Drawing.Point(393, 154);
-            this.txtEcole.Name = "txtEcole";
-            this.txtEcole.Size = new System.Drawing.Size(134, 20);
-            this.txtEcole.TabIndex = 19;
-            // 
-            // cbxStatut
-            // 
-            this.cbxStatut.FormattingEnabled = true;
-            this.cbxStatut.Location = new System.Drawing.Point(149, 146);
-            this.cbxStatut.Name = "cbxStatut";
-            this.cbxStatut.Size = new System.Drawing.Size(121, 21);
-            this.cbxStatut.TabIndex = 13;
-            // 
-            // cbxService
-            // 
-            this.cbxService.FormattingEnabled = true;
-            this.cbxService.Location = new System.Drawing.Point(149, 179);
-            this.cbxService.Name = "cbxService";
-            this.cbxService.Size = new System.Drawing.Size(121, 21);
-            this.cbxService.TabIndex = 14;
-            // 
-            // lblBrut
-            // 
-            this.lblBrut.AutoSize = true;
-            this.lblBrut.Location = new System.Drawing.Point(9, 212);
-            this.lblBrut.Name = "lblBrut";
-            this.lblBrut.Size = new System.Drawing.Size(108, 13);
-            this.lblBrut.TabIndex = 20;
-            this.lblBrut.Text = "Salaire brut mensuel :";
-            // 
-            // txtBrut
-            // 
-            this.txtBrut.Location = new System.Drawing.Point(149, 209);
-            this.txtBrut.Name = "txtBrut";
-            this.txtBrut.Size = new System.Drawing.Size(121, 20);
-            this.txtBrut.TabIndex = 15;
-            // 
-            // txtIndemnite
-            // 
-            this.txtIndemnite.Location = new System.Drawing.Point(393, 183);
-            this.txtIndemnite.Name = "txtIndemnite";
-            this.txtIndemnite.Size = new System.Drawing.Size(134, 20);
-            this.txtIndemnite.TabIndex = 21;
             // 
             // btnOK
             // 
