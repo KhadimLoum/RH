@@ -201,7 +201,7 @@
             // lblInterim
             // 
             this.lblInterim.AutoSize = true;
-            this.lblInterim.Location = new System.Drawing.Point(281, 123);
+            this.lblInterim.Location = new System.Drawing.Point(281, 150);
             this.lblInterim.Name = "lblInterim";
             this.lblInterim.Size = new System.Drawing.Size(92, 13);
             this.lblInterim.TabIndex = 11;
@@ -237,7 +237,7 @@
             // lblEcole
             // 
             this.lblEcole.AutoSize = true;
-            this.lblEcole.Location = new System.Drawing.Point(281, 154);
+            this.lblEcole.Location = new System.Drawing.Point(281, 181);
             this.lblEcole.Name = "lblEcole";
             this.lblEcole.Size = new System.Drawing.Size(40, 13);
             this.lblEcole.TabIndex = 7;
@@ -255,7 +255,7 @@
             // lblIndemnite
             // 
             this.lblIndemnite.AutoSize = true;
-            this.lblIndemnite.Location = new System.Drawing.Point(281, 185);
+            this.lblIndemnite.Location = new System.Drawing.Point(281, 212);
             this.lblIndemnite.Name = "lblIndemnite";
             this.lblIndemnite.Size = new System.Drawing.Size(64, 13);
             this.lblIndemnite.TabIndex = 4;
@@ -403,14 +403,14 @@
             // 
             // txtInterim
             // 
-            this.txtInterim.Location = new System.Drawing.Point(393, 122);
+            this.txtInterim.Location = new System.Drawing.Point(393, 149);
             this.txtInterim.Name = "txtInterim";
             this.txtInterim.Size = new System.Drawing.Size(134, 20);
             this.txtInterim.TabIndex = 18;
             // 
             // txtEcole
             // 
-            this.txtEcole.Location = new System.Drawing.Point(393, 154);
+            this.txtEcole.Location = new System.Drawing.Point(393, 181);
             this.txtEcole.Name = "txtEcole";
             this.txtEcole.Size = new System.Drawing.Size(134, 20);
             this.txtEcole.TabIndex = 19;
@@ -449,7 +449,7 @@
             // 
             // txtIndemnite
             // 
-            this.txtIndemnite.Location = new System.Drawing.Point(393, 183);
+            this.txtIndemnite.Location = new System.Drawing.Point(393, 210);
             this.txtIndemnite.Name = "txtIndemnite";
             this.txtIndemnite.Size = new System.Drawing.Size(134, 20);
             this.txtIndemnite.TabIndex = 21;
