@@ -8,6 +8,11 @@ namespace Gestion_Rh_K_J_Y
 {
     class Donnees
     {
+        public static System.Windows.Forms.Form MDI;
+
+        
+        public static Collaborateur Collabo = new Collaborateur();
         public static SortedList<Int32, Collaborateur> listCollaborateur = new SortedList<Int32, Collaborateur>();
+      
     }
 }
