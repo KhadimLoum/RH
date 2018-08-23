@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterDesCollaborateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,7 +37,6 @@
             this.déconnexionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesCollaborateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesCollaborateursToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,12 @@
             this.menuStrip1.Size = new System.Drawing.Size(1024, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fichierToolStripMenuItem
+            // 
+            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.fichierToolStripMenuItem.Text = "Fichier";
             // 
             // rHToolStripMenuItem
             // 
@@ -107,12 +113,6 @@
             this.listeDesCollaborateursToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
             this.listeDesCollaborateursToolStripMenuItem1.Text = "Liste des Collaborateurs";
             // 
-            // fichierToolStripMenuItem
-            // 
-            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.fichierToolStripMenuItem.Text = "Fichier";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -128,6 +128,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI";
             this.Text = "Page d\'accueil";
+            this.Load += new System.EventHandler(this.MDI_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
