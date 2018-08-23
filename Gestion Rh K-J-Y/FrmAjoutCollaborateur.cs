@@ -21,5 +21,10 @@ namespace Gestion_Rh_K_J_Y
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
