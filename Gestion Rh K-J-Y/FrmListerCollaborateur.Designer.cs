@@ -184,6 +184,7 @@
             this.dgvListCollaborateurs.Name = "dgvListCollaborateurs";
             this.dgvListCollaborateurs.Size = new System.Drawing.Size(852, 377);
             this.dgvListCollaborateurs.TabIndex = 7;
+            this.dgvListCollaborateurs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListCollaborateurs_CellContentClick_1);
             // 
             // FrmListerCollaborateur
             // 

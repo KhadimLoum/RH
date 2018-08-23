@@ -69,12 +69,14 @@ namespace Gestion_Rh_K_J_Y
             dt.Columns.Add(new DataColumn("Etat_Civil", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Nom", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Prénom", typeof(System.String)));
-            dt.Columns.Add(new DataColumn("Service", typeof(System.String)));
-            dt.Columns.Add(new DataColumn("Adresse 1", typeof(System.String)));
-            dt.Columns.Add(new DataColumn("Adresse 2", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Code Postal", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Ville", typeof(System.String)));
-            dt.Columns.Add(new DataColumn("Situation de Famille", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Adresse 1", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Adresse 2", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Salaire", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Qualification", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Situation Familiale", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Service", typeof(System.String)));
 
             foreach (Collaborateur Collabo in Donnees.listCollaborateur.Values)
             {
@@ -85,13 +87,14 @@ namespace Gestion_Rh_K_J_Y
                 dr[1] = Collabo.ETATCIVIL;
                 dr[2] = Collabo.NOM;
                 dr[3] = Collabo.PRENOM;
-                dr[4] = Collabo.SERVICE;
-                dr[5] = Collabo.ADRESSE1;
-                dr[6] = Collabo.ADRESSE2;
-                dr[7] = Collabo.CodePostal;
-                dr[8] = Collabo.VILLE;
-                dr[9] = Collabo.SITUATIONFAMILIALE;
-
+                dr[4] = Collabo.CodePostal ;
+                dr[5] = Collabo.VILLE;
+                dr[6] = Collabo.ADRESSE1;
+                dr[7] = Collabo.ADRESSE2;
+                dr[8] = Collabo.SALAIRE;
+                dr[9] = Collabo.QUALIFICATIONS;
+                dr[10] = Collabo.SITUATIONFAMILIALE;
+                dr[11] = Collabo.SERVICE;
                 // ajout de la ligne à la Datatable
                 dt.Rows.Add(dr);
 
@@ -216,5 +219,11 @@ namespace Gestion_Rh_K_J_Y
 
 
 
-    }    }
+    }
+
+        private void dgvListCollaborateurs_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
 }
