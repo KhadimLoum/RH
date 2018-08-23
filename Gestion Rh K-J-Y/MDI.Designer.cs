@@ -36,18 +36,22 @@
             this.déconnexionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesCollaborateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesCollaborateursToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fichierToolStripMenuItem,
             this.rHToolStripMenuItem,
             this.connexionToolStripMenuItem,
-            this.listeDesCollaborateursToolStripMenuItem});
+            this.listeDesCollaborateursToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1289, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1024, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,13 +83,13 @@
             // déconnexionToolStripMenuItem
             // 
             this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
-            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.déconnexionToolStripMenuItem.Text = "Changer Utilisateur";
             // 
             // déconnexionToolStripMenuItem1
             // 
             this.déconnexionToolStripMenuItem1.Name = "déconnexionToolStripMenuItem1";
-            this.déconnexionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.déconnexionToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.déconnexionToolStripMenuItem1.Text = "Déconnexion";
             // 
             // listeDesCollaborateursToolStripMenuItem
@@ -103,11 +107,23 @@
             this.listeDesCollaborateursToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
             this.listeDesCollaborateursToolStripMenuItem1.Text = "Liste des Collaborateurs";
             // 
+            // fichierToolStripMenuItem
+            // 
+            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "?";
+            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1289, 596);
+            this.ClientSize = new System.Drawing.Size(1024, 434);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI";
@@ -129,5 +145,7 @@
         private System.Windows.Forms.ToolStripMenuItem ajouterDesCollaborateursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeDesCollaborateursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeDesCollaborateursToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

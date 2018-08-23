@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvLister = new System.Windows.Forms.DataGridView();
             this.ColumnMat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnEtatcivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,21 +48,21 @@
             this.txtRecherche = new System.Windows.Forms.TextBox();
             this.btnLancer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbtAfficherTout = new System.Windows.Forms.RadioButton();
+            this.rbtNom = new System.Windows.Forms.RadioButton();
+            this.rbtService = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLister)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvLister
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvLister.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLister.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnMat,
             this.ColumnEtatcivil,
             this.ColumnNom,
@@ -75,11 +75,11 @@
             this.ColumnQualification,
             this.ColumnSituationF,
             this.ColumnService});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 245);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1216, 137);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dgvLister.Location = new System.Drawing.Point(2, 245);
+            this.dgvLister.Name = "dgvLister";
+            this.dgvLister.Size = new System.Drawing.Size(1216, 137);
+            this.dgvLister.TabIndex = 0;
+            this.dgvLister.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // ColumnMat
             // 
@@ -182,38 +182,49 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rbtAfficherTout);
+            this.groupBox1.Controls.Add(this.rbtNom);
+            this.groupBox1.Controls.Add(this.rbtService);
             this.groupBox1.Enabled = false;
             this.groupBox1.Location = new System.Drawing.Point(72, 125);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(413, 100);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Trie";
+            this.groupBox1.Text = "Tri";
             // 
-            // radioButton1
+            // rbtAfficherTout
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(16, 48);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Service";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtAfficherTout.AutoSize = true;
+            this.rbtAfficherTout.Location = new System.Drawing.Point(310, 48);
+            this.rbtAfficherTout.Name = "rbtAfficherTout";
+            this.rbtAfficherTout.Size = new System.Drawing.Size(86, 17);
+            this.rbtAfficherTout.TabIndex = 3;
+            this.rbtAfficherTout.TabStop = true;
+            this.rbtAfficherTout.Text = "Afficher Tout";
+            this.rbtAfficherTout.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtNom
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(120, 48);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nom";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtNom.AutoSize = true;
+            this.rbtNom.Location = new System.Drawing.Point(120, 48);
+            this.rbtNom.Name = "rbtNom";
+            this.rbtNom.Size = new System.Drawing.Size(47, 17);
+            this.rbtNom.TabIndex = 1;
+            this.rbtNom.TabStop = true;
+            this.rbtNom.Text = "Nom";
+            this.rbtNom.UseVisualStyleBackColor = true;
+            // 
+            // rbtService
+            // 
+            this.rbtService.AutoSize = true;
+            this.rbtService.Location = new System.Drawing.Point(16, 48);
+            this.rbtService.Name = "rbtService";
+            this.rbtService.Size = new System.Drawing.Size(61, 17);
+            this.rbtService.TabIndex = 0;
+            this.rbtService.TabStop = true;
+            this.rbtService.Text = "Service";
+            this.rbtService.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -242,17 +253,6 @@
             this.button3.Text = "Fermer";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(310, 48);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // FrmLister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,12 +265,12 @@
             this.Controls.Add(this.btnLancer);
             this.Controls.Add(this.txtRecherche);
             this.Controls.Add(this.lblRecherche);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvLister);
             this.Enabled = false;
             this.Name = "FrmLister";
             this.Text = "Lancer";
             this.Load += new System.EventHandler(this.FrmLister_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLister)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -281,7 +281,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvLister;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMat;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEtatcivil;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNom;
@@ -300,11 +300,11 @@
         private System.Windows.Forms.TextBox txtRecherche;
         private System.Windows.Forms.Button btnLancer;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbtNom;
+        private System.Windows.Forms.RadioButton rbtService;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rbtAfficherTout;
     }
 }
